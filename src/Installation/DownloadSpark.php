@@ -73,7 +73,8 @@ class DownloadSpark
 
         try {
             return (string) (new HttpClient)->get(
-                $this->sparkUrl.'/api/releases/'.$release.'/download?api_token='.$this->readToken(),
+                // $this->sparkUrl.'/api/releases/'.$release.'/download?api_token='.$this->readToken(),
+                'https://github.com/TangRufus/laravel-spark/archive/master.zip',
                 [
                     'headers' => [
                         'X-Requested-With' => 'XMLHttpRequest',
